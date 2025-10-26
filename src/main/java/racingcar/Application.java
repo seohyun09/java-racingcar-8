@@ -9,8 +9,6 @@ public class Application {
         String inputCarNames = Console.readLine();
         String[] carNames = InputSplitter.splitInputCarNames(inputCarNames);
 
-        for (String carName : carNames) {
-            System.out.println("carName = " + carName);
-        }
+
     }
 }

@@ -6,7 +6,7 @@ public final class InputSplitter {
 
     public static String[] splitInputCarNames(String inputCarNames) {
         return Arrays.stream(inputCarNames.split(","))
-                .map(String::trim)
+                .map(carName -> InputValidator.validateCarNameLength(carName.trim()))
                 .toArray(String[]::new);
     }
 }
