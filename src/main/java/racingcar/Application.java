@@ -30,5 +30,8 @@ public class Application {
                     System.out.println();
                 });
 
+        List<String> winners = WinnerFinder.findWinner(cars);
+        System.out.println("최종 우승자 : " + String.join(", ", winners));
+
     }
 }
